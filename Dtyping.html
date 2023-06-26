@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dtyping test</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tittle">
+   <marquee behavior="scroll" width="500"><h1>Let's Test your Typing Speed !</h1></marquee><br>
+    </div>
+    <div class="container">
+      <div class="stats">
+        <p>Time: <span id="timer">0s</span></p>
+        <p>Mistakes: <span id="mistakes">0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"
+      ></div>
+      <textarea
+        rows="3"
+        id="quote-input"
+        placeholder="Please type here when the test starts.."
+      ></textarea>
+      <center><button id="start-test" onclick="startTest()">Start Test</button></center>
+      <center><button id="stop-test" onclick="displayResult()">Stop Test</button></center>
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+          <p>Accuracy: <span id="accuracy"></span></p>
+          <p>Speed: <span id="wpm"></span></p>
+      </div>
+    </div>
+   </div>
+
+      <div class="back">
+     <center><a href="home.html" class="bttn"><i class="fas fa-home"></i></a></center>
+      </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
